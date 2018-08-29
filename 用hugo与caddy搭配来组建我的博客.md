@@ -40,7 +40,7 @@ $ cp themes/jane/exampleSite/config.toml ./
 $ hugo server
 ```
 
-里面的配置文件有详细的中文注释，所以可以很好的完成配置。把文章放到`/content/post`目录中，然后在站点目录中执行`hugo`命令，不到1秒即可完成文章生成，生成的站点在`public`目录里，只要把该目录上传到任意web服务器中即可。这里提一下，文章虽然是markdown写成，但是对于标头还是要按格式书写，hugo支持多种写法，而且完全支持hexo的写法，所以我的博客基本上完全不用修改即可完成迁移。当然作者觉得YAML不够优雅，所以我们也可以优雅的使用TOML来写：
+​	里面的配置文件有详细的中文注释，所以可以很好的完成配置。把文章放到`/content/post`目录中，然后在站点目录中执行`hugo`命令，不到1秒即可完成文章生成，生成的站点在`public`目录里，只要把该目录上传到任意web服务器中即可。这里提一下，文章虽然是markdown写成，但是对于标头还是要按格式书写，hugo支持多种写法，而且完全支持hexo的写法，所以我的博客基本上完全不用修改即可完成迁移。当然作者觉得YAML不够优雅，所以我们也可以优雅的使用TOML来写：
 
 ```toml
 +++
@@ -94,4 +94,11 @@ defaultContentLanguage = "zh-cn"  # 默认使用的语言
 
 #### 四、关于caddy的配置
 
-我之前有一篇文章专门写了关于caddy架设web服务器的文章，[可以参考一下](https://www.jtree.cc/post/%E8%BD%BB%E9%87%8F%E7%BA%A7web%E6%9C%8D%E5%8A%A1%E5%99%A8caddy%E7%9A%84%E4%BD%BF%E7%94%A8%E8%AF%B4%E6%98%8E/) 。这里只是把 root目录指向 my-blog的public目录即可。还有一个小技巧，我是阿里云的ECS服务器，我还专门购买了nas来放置重要数据。所以我把我的所有文章放在nas里面，然后用`ln -s`做了软连接，既不会影响生成站点，也可以保障安全。
+​	我之前有一篇文章专门写了关于caddy架设web服务器的文章，[可以参考一下](https://www.jtree.cc/post/%E8%BD%BB%E9%87%8F%E7%BA%A7web%E6%9C%8D%E5%8A%A1%E5%99%A8caddy%E7%9A%84%E4%BD%BF%E7%94%A8%E8%AF%B4%E6%98%8E/) 。这里只是把 root目录指向 my-blog的public目录即可。还有一个小技巧，我是阿里云的ECS服务器，我还专门购买了nas来放置重要数据。所以我把我的所有文章放在nas里面，然后用`ln -s`做了软连接，既不会影响生成站点，也可以保障安全。
+
+#### 五、补充
+
+​	之前一直使用`ln-s`的方式把public目录软连接到caddy目录，其实caddy本身自带`http.hugo`和`http.git`插件(当然git插件我一直没有弄好过，以后弄好再补充吧)已经帮我们处理好了，详情参考[官网docs](https://caddyserver.com/docs/http.git)或者我的设置：
+
+![](http://p.jtree.cc/jtree.cc/caddy-filemanager-hugo.png)
+
