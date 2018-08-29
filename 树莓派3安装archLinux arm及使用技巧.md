@@ -136,7 +136,7 @@ pacman-key --populate archlinuxarm
 
 Pacman 是一个命令行工具，这意味着当你执行下面的命令时，必须在终端或控制台中进行。
 
-```bash
+```yaml
 1、更新系统
 在 Arch Linux 中，使用一条命令即可对整个系统进行更新：
 pacman -Syu
@@ -149,7 +149,7 @@ pacman -Sv 包名 在显示一些操作信息后执行安装。
 pacman -U 安装本地包，其扩展名为 pkg.tar.gz。
 3、删除包
 pacman -R 包名 该命令将只删除包，不包含该包的依赖。
-pacman -Rs 包名 在删除包的同时，也将删除其依赖。
+pacman -Rs 包名 在删除包的同时，也将删除其依赖。（一般用这个）
 pacman -Rd 包名 在删除包时不检查依赖。
 4、搜索包
 pacman -Ss 关键字 这将搜索含关键字的包。
@@ -159,6 +159,9 @@ pacman -Ql 包名 列出该包的文件。
 pacman -Sw 包名 只下载包，不安装。
 pacman -Sc Pacman 下载的包文件位于 /var/cache/pacman/pkg/ 目录。该命令将清理未安装的包文件。
 pacman -Scc 清理所有的缓存文件。
+6、降级系统
+pacman -Syyuu
+你必须重视这一点：虽然在大多数情况下这不会引起问题，但是这种可能性还是存在，即降级一个包或几个包将会引起级联传播的失败并会将你的系统处于不一致的状态
 ```
 
 ##### yaourt命令
@@ -178,3 +181,51 @@ yaourt -Si ：列出包的信息
 #### 六、参考
 
 [颓废风-树莓派3下arch Linux arm 一些优化](https://www.sysblz.com/article/13694117.html)  、 [ifconfiger-树莓派安装Arch Linux](https://ifconfiger.com/articles/Install-Arch-Linux-on-Raspberry-Pi) 、[archlinux官方手册](https://wiki.archlinux.org/index.php?title=Yaourt_(%E7%AE%80%E4%BD%93%E4%B8%AD%E6%96%87)&oldid=235625) 
+
+#### 七、其它aur包助手
+
+	考虑到官方给出yaourt最近开发缓慢且可能停止继续开发，而给出yaourt为危险程序的警告。我们不得不寻找其它其它aur包助手。
+
+##### aurman
+
+[aurman](https://github.com/polygamma/aurman)  是最好的AUR帮手之一，可以替代Yaourt。它与pacman的语法几乎相似，支持所有pacman操作。您可以搜索AUR，解决依赖关系，在包构建之前检查PKGBUILD内容等。
+
+##### 安装aurman
+
+```shell
+$ git clone https://aur.archlinux.org/aurman.git
+$ cd aurman
+$ makepkg -si
+```
+
+##### 使用aurman
+
+```shell
+$ aurman -S <package-name>
+```
+
+##### yay
+
+[yay](https://github.com/Jguer/yay)是用Go编写的下一个最好的AUR助手，目的是提供一个pacman接口，用户输入最少，像搜索一样，几乎没有依赖。
+
+- yay提供AUR表完成并从ABS或AUR下载PKGBUILD。
+- 支持缩小搜索范围，不支持PKGBUILD。
+- 二进制文件没有pacman的附加依赖项。
+- 提供高级依赖项解算器，并在构建过程结束时删除make依赖项。
+- 在/etc/pacman.conf文件中启用Color选项时支持彩色输出。
+- 它可以仅支持AUR包或仅支持repo包。
+
+##### 安装yay
+
+```shell
+$ git clone https://aur.archlinux.org/yay.git
+$ cd yay
+$ makepkg -si
+```
+
+##### 使用yay
+
+```shell
+$ yay -S <package-name>
+```
+
