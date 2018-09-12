@@ -9,7 +9,7 @@ categories = [
 
 +++
 
-	之前介绍过一个非常强大好用的shell---[ohmyzsh](https://jtree.cc/post/oh-my-zsh%E4%BD%93%E9%AA%8C%E5%B0%8F%E8%AE%B0/),而且本人也一直在使用，最近老是在论坛的回复中看到fish的存在，我那颗不安分的心又开始躁动了。。。
+　　之前介绍过一个非常强大好用的shell---[ohmyzsh](https://jtree.cc/post/oh-my-zsh%E4%BD%93%E9%AA%8C%E5%B0%8F%E8%AE%B0/),而且本人也一直在使用，最近老是在论坛的回复中看到fish的存在，我那颗不安分的心又开始躁动了。。。
 
 #### 一、首先给出几个官网
 
@@ -17,13 +17,13 @@ categories = [
 
 #### 二、安装git
 
-	由于oh-my-fish安装需要git版本大于1.9.3，而centos通过yum安装git版本是1.8，所以我们只能手动安装高版本git，而且还是编译安装。不过其实也容易。如果之前通过yum安装过git请一定要先卸载。
+　　由于oh-my-fish安装需要git版本大于1.9.3，而centos通过yum安装git版本是1.8，所以我们只能手动安装高版本git，而且还是编译安装。不过其实也容易。如果之前通过yum安装过git请一定要先卸载。
 
 ```shell
 # yum remove git
 ```
 
-	根据[Git官网](https://git-scm.com/book/zh/v1/%E8%B5%B7%E6%AD%A5-%E5%AE%89%E8%A3%85-Git)的安装方法先安装必要依赖工具和库文件,之后从官网下载最新源码包：
+　　根据[Git官网](https://git-scm.com/book/zh/v1/%E8%B5%B7%E6%AD%A5-%E5%AE%89%E8%A3%85-Git)的安装方法先安装必要依赖工具和库文件,之后从官网下载最新源码包：
 
 ```shell
 # yum install curl-devel expat-devel gettext-devel openssl-devel zlib-devel   //安装依赖包和库文件
@@ -35,14 +35,14 @@ categories = [
 # sudo make prefix=/usr/local install
 ```
 
-	安装成功！当然如果，现在可以使用`git –version`命令查看版本是否正确。如果发现无此命令，则有可能是环境变量没有设置正确：
+　　安装成功！当然如果，现在可以使用`git –version`命令查看版本是否正确。如果发现无此命令，则有可能是环境变量没有设置正确：
 
  ```shell
  echo "export PATH=$PATH:/usr/local/git/bin" >> /etc/bashrc
  source /etc/bashrc
  ```
 
-	现在已经可以用 `git` 命令了，用 `git` 把 Git 项目仓库克隆到本地，以便日后随时更新：
+　　现在已经可以用 `git` 命令了，用 `git` 把 Git 项目仓库克隆到本地，以便日后随时更新：
 
 ```shell
 # git clone git://git.kernel.org/pub/scm/git/git.git
@@ -50,9 +50,9 @@ categories = [
 
 #### 三、安装fish
 
-对于CentOS来说，当然是不能直接yum安装的啦，不过还是有已经编译好的二进制rpm包可以使用。为了以后更新方便，还是加入repo后使用yum来安装和更新更方便，[官网](https://fishshell.com/)其实有每个发行版的详细安装方式，可自行前往：
+　　对于CentOS来说，当然是不能直接yum安装的啦，不过还是有已经编译好的二进制rpm包可以使用。为了以后更新方便，还是加入repo后使用yum来安装和更新更方便，[官网](https://fishshell.com/)其实有每个发行版的详细安装方式，可自行前往：
 
-对于 CentOS 7，请以根用户 root 运行下面命令：
+　　对于 CentOS 7，请以根用户 root 运行下面命令：
 
 ```shell
 # cd /etc/yum.repos.d/
@@ -62,7 +62,7 @@ categories = [
 
 #### 四、安装oh-my-fish
 
-这个就简单了，因为官网有[中文件docs](https://github.com/oh-my-fish/oh-my-fish/tree/master/docs/zh-CN)呀：
+　　这个就简单了，因为官网有[中文件docs](https://github.com/oh-my-fish/oh-my-fish/tree/master/docs/zh-CN)呀：
 
 ```shell
 # curl -L github.com/oh-my-fish/oh-my-fish/raw/master/bin/install | fish   //安装oh-my-fish
