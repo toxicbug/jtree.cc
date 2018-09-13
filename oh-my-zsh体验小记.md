@@ -3,7 +3,7 @@ title = "oh-my-zsh体验小记"
 date = "2018-01-18"
 tags = [ "ZSH", "bash" ]
 categories = [
-	"Linux-Base",
+​	"Linux-Base",
    "Linux-software"
 ]
 +++
@@ -24,7 +24,6 @@ cat /etc/shells
 
 ``` shell
 # yum install zsh
-
 ```
 
 <!-- more -->
@@ -62,9 +61,25 @@ rm ~/.zcompdump*
 
 #### 常用插件
 
-git sudo z extract
+##### git sudo z extract d
 
 > 注意：要完美的使用x解压全，最好安装p7zip和unzip.
+
+##### zsh-autosuggestions
+
+[官网](https://github.com/zsh-users/zsh-autosuggestions)
+
+1. Clone this repository into $ZSH_CUSTOM/plugins (by default ~/.oh-my-zsh/custom/plugins)
+
+```shell
+# git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
+```
+
+2. Add the plugin to the list of plugins for Oh My Zsh to load (inside ~/.zshrc):
+
+`plugins=(zsh-autosuggestions)`
+
+3. Start a new terminal session.
 
 #### 配置文件翻译
 
