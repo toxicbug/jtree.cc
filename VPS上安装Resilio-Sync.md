@@ -3,7 +3,6 @@ title = "VPS上安装Resilio-Sync"
 date = "2017-03-22"
 tags = [ "vps", "resillio sync", "ssh"  ]
 categories = [
-​	"Linux-base",
 ​	"Linux-software",
    "Linux-server"
 ]
