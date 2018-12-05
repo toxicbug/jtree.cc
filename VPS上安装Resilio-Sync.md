@@ -3,8 +3,8 @@ title = "VPS上安装Resilio-Sync"
 date = "2017-03-22"
 tags = [ "vps", "resillio sync", "ssh"  ]
 categories = [
-	"Linux-base",
-	"Linux-software",
+​	"Linux-base",
+​	"Linux-software",
    "Linux-server"
 ]
 +++
@@ -54,4 +54,19 @@ Systemctl can be also run with the following arguments: start, stop, enable, dis
 ```
 systemctl restart resilio-sync
 ```
+
+#### 4. 被墙后用SS+Proxifier达到连同的设置
+
+首先是架设SS服务器，不用多说。
+
+利用Proxifier来设置分流代理
+
+* 先设置代理服务器
+
+  ![](http://p.jtree.cc/blog/20181205131855.png?imageslim)
+
+* 再设置代理规则（主要是173.244.217.42和209.95.56.60这两个IP）
+
+  ![](http://p.jtree.cc/blog/20181205131918.png?imageslim)
+
 
