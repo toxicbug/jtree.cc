@@ -4,7 +4,7 @@ date = "2018-01-18"
 tags = [ "ZSH", "bash" ]
 categories = [
 ​	"Linux-Base",
-   "Linux-software"
+​	"Linux-software"
 ]
 +++
 

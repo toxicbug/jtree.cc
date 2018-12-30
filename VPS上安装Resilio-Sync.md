@@ -4,7 +4,7 @@ date = "2017-03-22"
 tags = [ "vps", "resillio sync", "ssh"  ]
 categories = [
 ​	"Linux-software",
-   "Linux-server"
+​	 "Linux-server"
 ]
 +++
 
