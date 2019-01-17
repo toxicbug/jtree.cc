@@ -1,7 +1,7 @@
 +++
 title = "systemd-mount命令详解"
 date = "2019-01-17"
-tags = [ "systemd-mount", "mount", "automount", "autofs" ]
+tags = ["systemd-mount", "mount", "automount", "autofs"]
 categories = [
 ​	"Linux-Server",
    "Linux-base"

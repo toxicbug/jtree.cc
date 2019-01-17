@@ -1,7 +1,7 @@
 +++
 title = "查看分区格式和硬件查询命令"
 date = "2019-01-16"
-tags = [ "df", "fdisk", "parted", "lsblk" ]
+tags = ["df", "fdisk", "parted", "lsblk"]
 categories = [
 ​	"Linux-Server",
    "Linux-base"

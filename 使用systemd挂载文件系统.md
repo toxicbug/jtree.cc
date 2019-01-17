@@ -1,9 +1,9 @@
 +++
 title = "使用systemd挂载文件系统"
 date = "2018-04-07"
-tags = [ "mount", "systemd", ]
+tags = ["mount", "systemd"]
 categories = [
-	"Linux-Base"
+​	"Linux-Base"
 ]
 +++
 

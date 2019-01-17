@@ -1,10 +1,10 @@
 +++
 title = "另外一个强大的shell----fish"
 date = "2018-09-12"
-tags = [ "shell", "ohmyfish" ]
+tags = ["shell", "ohmyfish"]
 categories = [
-	"Linux-Server",
-    "Linux-base"
+​	"Linux-Server",
+​    "Linux-base"
 ]
 
 +++
