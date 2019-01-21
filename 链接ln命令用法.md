@@ -2,11 +2,7 @@
 title = "链接ln命令用法"
 date = "2017-03-23"
 tags = [ "ln", "ssh"  ]
-categories = [
-	"Linux-base",
-	"Linux-software",
-   "Linux-server"
-]
+categories = ["Linux-base", "Linux-software", "Linux-server"]
 +++
 
 ### 一、链接 ln

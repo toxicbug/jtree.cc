@@ -2,10 +2,7 @@
 title = "sudo命令出现unable to resolve host 解决方法"
 date = "2018-03-16"
 tags = [ "sudo", "ubuntu", "base" ]
-categories = [
-    "Linux-Base",
-    "Linux-Software"
-]
+categories = ["Linux-Base", "Linux-Software"]
 +++
 
 Ubuntu/debian环境, 假设这台机器名字叫abc(机器的hostname), 每次执行sudo命令就出现这个警告讯息:

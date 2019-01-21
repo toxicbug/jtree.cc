@@ -2,10 +2,7 @@
 title = "localectl命令与timedatectl命令"
 date = "2018-03-04"
 tags = [ "localectl", "timedatectl", "base" ]
-categories = [
-    "Linux-Base",
-    "Linux-Software"
-]
+categories = ["Linux-Base", "Linux-Software"]
 +++
 
 　　对于国外的VPS来说,基本都不会默认安装中文支持的,但是我们有些中文目录或者中文文件就比较麻烦,而且几乎所有国外VPS都使用UTC时间,与国内常用的CTS相差8个时间,所以这里们修改一下让时间和国内一至,同时支持显示中文文和目录

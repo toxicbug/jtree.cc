@@ -2,11 +2,7 @@
 title = "树莓派配置 AP，变身无线路由器"
 date = "2018-02-07"
 tags = [ "Raspberry Pi", "AP" ]
-categories = [
-    "Linux-Base",
-    "Linux-Software",
-    "Linux-Raspberry Pi"
-]
+categories = ["Linux-Base", "Linux-Software", "Linux-Raspberry Pi"]
 +++
 
 		首先介绍一下系统环境，笔者用的是树莓派2B (Raspberry Pi 2 Model B)系统是 [Arch Linux](https://whypro.github.io/hystars/shu-mei-pai/sd-card-creation-for-rpi.html)。另外购得了一个无线网卡，[Tenda W311M](http://www.tenda.com.cn/product/W311M.html)，RT5370 芯片，支持 Soft-AP。无线网卡是否支持 AP，这点大家购买前一定要确认一下。

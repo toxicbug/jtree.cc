@@ -2,11 +2,7 @@
 title = "visudo命令简要配置"
 date = "2017-09-30"
 tags = [ "visudo", "sudo", "ssh" ]
-categories = [
-	"Linux-base",
-	"Linux-software",
-   "Linux-server"
-]
+categories = ["Linux-base", "Linux-software", "Linux-server"]
 +++
 
 ​	你可以自由的活在一个没有terminal的Windows的世界，但是当你爱上Linux、Mac时，你将离不开terminal，离不开sudo。

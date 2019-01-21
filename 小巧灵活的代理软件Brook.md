@@ -2,11 +2,7 @@
 title = "小巧灵活的代理软件 Brook"
 date = "2018-09-04"
 tags = [ "代理", "VPN" ]
-categories = [
-	"Linux-Server",
-    "Linux-Software"
-]
-
+categories = ["Linux-Server", "Linux-Software"]
 +++
 
 Brook是一个由 Go语言编写的跨平台代理软件，支持 **Linux/MacOS/Windows/Android/iOS 各个平台。**

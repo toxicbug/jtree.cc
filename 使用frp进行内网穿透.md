@@ -2,10 +2,7 @@
 title = "使用frp进行内网穿透"
 date = "2018-08-08"
 tags = [ "frp", "内网穿透" ]
-categories = [
-	"Linux-Server",
-    "Linux-Safe"
-]
+categories = ["Linux-Server", "Linux-Safe"]
 +++
 
 #### 一、简介

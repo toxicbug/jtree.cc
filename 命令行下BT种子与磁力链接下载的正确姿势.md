@@ -2,10 +2,7 @@
 title = "命令行下BT种子与磁力链接下载的正确姿势"
 date = "2018-04-25"
 tags = [ "tget", "aria2" ]
-categories = [
-	"Linux-software",
-	"Linux-Base"
-]
+categories = ["Linux-software", "Linux-Base"]
 +++
 
 wget是linux下常用的命令行下载工具，是Linux用户是必不可少的工具，尤其对于网络管理员，经常要下载一些软件。而tget和aria2是命令行下可以用于BT种子和磁力链接的相当好用的下载工具。

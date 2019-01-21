@@ -2,9 +2,7 @@
 title = "使用systemd挂载文件系统"
 date = "2018-04-07"
 tags = ["mount", "systemd"]
-categories = [
-​	"Linux-Base"
-]
+categories = ["Linux-Base", "Linux-Server"]
 +++
 
 为什么使用systemd来挂载文件系统而不使用fstab？使用fstab的时候如果设备被移除会导致系统启动失败，无法进入系统（只能进入临时修复系统），systemd则没有这个问题。

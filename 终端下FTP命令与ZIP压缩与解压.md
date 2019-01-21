@@ -2,11 +2,7 @@
 title = "终端下FTP命令与ZIP、7z压缩与解压"
 date = "2017-03-10"
 tags = [ "ftp", "zip", "7z" ]
-categories = [
-	"Linux-base",
-	"Linux-software",
-   "Linux-server"
-]
+categories = ["Linux-base", "Linux-software", "Linux-server"]
 +++
 
 很多时候我们还是需要在Linux终端下上传、下载文件，所以FTP命令还是需要的，当然还有ZIP文件的压缩与解压，主要是大多数桌面压缩还是winzip格式，所以也有必要备忘一下。

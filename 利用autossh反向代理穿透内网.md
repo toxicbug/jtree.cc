@@ -2,10 +2,7 @@
 title = "利用autossh反向代理穿透内网"
 date = "2018-02-20"
 tags = [ "autossh", "代理", "内网穿透" ]
-categories = [
-    "Linux-Base",
-    "Linux-Software"
-]
+categories = ["Linux-Base", "Linux-Software"]
 +++
 
 　　这篇文章主要介绍了如何利用SSH 反向隧道穿透NAT，并演示了如何维持一条稳定的SSH 隧道。

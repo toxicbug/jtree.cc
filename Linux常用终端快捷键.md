@@ -2,10 +2,7 @@
 title = "Linux常用终端快捷键"
 date = "2018-03-04"
 tags = [ "shell", "快捷键", "base" ]
-categories = [
-    "Linux-Base",
-    "Linux-Software"
-]
+categories = ["Linux-Base", "Linux-Software"]
 +++
 
 　　在Linux终端里输入命令的时候,是不是经常输入错误一两个字符或者是忘记输入一些参数呢?又或者是重复前面的某一条命令,但是参数又不完全一样,这个时候, 我们只能用方向键一个一个的回去修改?

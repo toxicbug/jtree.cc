@@ -2,11 +2,7 @@
 title = "VPS上部署Hexo博客环境"
 date = "2017-01-17"
 tags = ["hexo", "Blog" ]
-categories = [
-	"Linux-blog",
-   "Linux-server",
-	"Linux-Software"
-]
+categories = ["Linux-blog", "Linux-server", "Linux-Software"]
 +++
 
 我之前写过一个关于MacOS环境部署Hexo的文章,后来我在实际使用过程发现还是有很多不方便,比如我的mac在家,那么在办公室或者手机上要发博客是基本不可能的事情,我为此也很苦恼,但是有一天我突发奇想,把Hexo博客环境搭建在我的VPS上,不管在windows下还是手机上,都可以用Markdown写好上传到VPS即,然后在SSH终端一个`hexo d -g`命令即可发布.

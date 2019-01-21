@@ -2,10 +2,7 @@
 title = "oh-my-zsh体验小记"
 date = "2018-01-18"
 tags = ["zsh", "bash"]
-categories = [
-​	"Linux-Server",
-​    "Linux-base"
-]
+categories = ["Linux-Server", "Linux-base"]
 +++
 
 ## oh-my-zsh体验小记

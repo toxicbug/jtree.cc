@@ -2,11 +2,7 @@
 title = "用hugo与caddy搭配来组建我的博客"
 date = "2018-03-29"
 tags = [ "caddy", "web server", "hugo", "博客" ]
-categories = [
-	"Linux-Server",
-   "Linux-blog",
-   "Linux-software"
-]
+categories = ["Linux-Server", "Linux-blog", "Linux-software"]
 +++
 
 #### 一、为什么会选择hugo

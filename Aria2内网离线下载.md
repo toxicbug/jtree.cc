@@ -2,10 +2,7 @@
 title = "Aria2+AriaNg+caddy+frp完成内网离线下载功能"
 date = "2018-08-18"
 tags = [ "frp", "aria2" ]
-categories = [
-	"Linux-Server",
-    "Linux-net"
-]
+categories = ["Linux-Server", "Linux-net"]
 +++
 
 ​	aria2的介绍就不多说，全能型的命令行下载器。AriaNg是aria2的一个非常优秀的web前端。caddy是本人非常喜欢的相当轻量级的web服务器。frp大名顶顶的内网穿透工具。

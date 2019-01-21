@@ -2,10 +2,7 @@
 title = "用Lsyncd实现文件实时同步"
 date = "2018-03-30"
 tags = [ "lsyncd", "备份", "同步" ]
-categories = [
-    "Linux-Base",
-    "Linux-Software"
-]
+categories = ["Linux-Base", "Linux-Software"]
 +++
 
 Lsyncd结合了inotify + rsync，Lsyncd监视本地目录树事件监视器接口（inotify或fsevents）。它聚合和组合事件几秒钟，然后生成一个（或多个）进程（es）来同步更改。

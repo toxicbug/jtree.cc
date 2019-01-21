@@ -2,11 +2,7 @@
 title = "使用rsync进行数据传输"
 date = "2018-08-07"
 tags = [ "rsync", "备份", "base" ]
-categories = [
-	"Linux-software",
-	"Linux-Base",
-    "Linux-server"
-]
+categories = ["Linux-software", "Linux-Base", "Linux-server"]
 +++
 
 `rsync`和`scp`一样，是用于服务器间数据传输的工具。相比于scp主要有以下优点：

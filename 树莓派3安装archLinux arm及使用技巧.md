@@ -2,11 +2,7 @@
 title = "树莓派3安装archLinux arm及使用技巧"
 date = "2018-05-07"
 tags = [ "Raspberry Pi", "ArchLinux", "arm" ]
-categories = [
-	"Linux-Raspberry Pi",
-	"Linux-Base",
-    "Linux-server"
-]
+categories = ["Linux-Raspberry Pi", "Linux-Base", "Linux-server"]
 +++
 #### 一、树莓派3安装ArchLinux
 

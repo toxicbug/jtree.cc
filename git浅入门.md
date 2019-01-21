@@ -2,10 +2,7 @@
 title = "git浅入门"
 date = "2018-08-21"
 tags = [ "git", "ohmyzsh" ]
-categories = [
-	"Linux-Server",
-    "Linux-base"
-]
+categories = ["Linux-Server", "Linux-base"]
 +++
 
 首先当然是要安装git啰，`yaourt -Sy git`.对了这里也给出:[ohmyzsh内置git插件的别名wiki地址](https://github.com/robbyrussell/oh-my-zsh/wiki/Plugin:git) 以便查用。

@@ -2,10 +2,7 @@
 title = "在Mac下通过HEXO搭建博客"
 date = "2016-10-21"
 tags = ["hexo", "Mac", "blog" ]
-categories = [
-   "Mac",
-   "Linux-Blog"
-]
+categories = ["Mac", "Linux-Blog"]
 +++
 
 　　经过一番折腾，总算是把Hexo给弄好了。在这期间遇到了各种问题，网上有的教程也有点老了，这里就再写一篇。最新的教程可以去[Hexo官网](https://hexo.io/zh-cn/docs/index.html)查看。

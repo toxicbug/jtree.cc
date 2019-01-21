@@ -2,11 +2,7 @@
 title = "轻量级web服务器caddy的使用说明"
 date = "2018-03-27"
 tags = [ "caddy", "web server", "blog" ]
-categories = [
-	"Linux-software",
-	"Linux-Base",
-   "Linux-server"
-]
+categories = ["Linux-software", "Linux-Base", "Linux-server"]
 +++
 
 作为一个非专业人士，web对于我来说仅仅只需要能处理静态页面或者少量php即可，所以nginx对我来说就来难了，正好采用GO语言的caddy仅一个单文件，配置文件又简单到三两行代码，cpu和内存占用又极低，所以它才是我最理想的web服务器。

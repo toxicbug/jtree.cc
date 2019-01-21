@@ -2,11 +2,7 @@
 title = "Linux下时间同步"
 date = "2017-01-14"
 tags = [ "ntpdate", "localtime", "base"  ]
-categories = [
-	"Linux-base",
-	"Linux-software",
-   "Linux-server"
-]
+categories = ["Linux-base", "Linux-software", "Linux-server"]
 +++
 
 ​	众所周知，Linux服务器如果做同步的话，时间是相当重要的，所以我在这里给大家一个同步时间的方法：

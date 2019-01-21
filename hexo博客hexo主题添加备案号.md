@@ -2,11 +2,7 @@
 title = "hexo博客hexo主题添加备案号"
 date = "2018-03-04"
 tags = [ "Hexo", "blog" ]
-categories = [
-	"Linux-blog",
-	"Linux-software",
-   "Linux-server"
-]
+categories = ["Linux-blog", "Linux-software", "Linux-server"]
 +++
 
 

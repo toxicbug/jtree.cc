@@ -2,10 +2,7 @@
 title = "CentOS7使用firewalld防火墙"
 date = "2017-01-13"
 tags = [ "firewalld", "安全" ]
-categories = [
-	"Linux-Server",
-    "Linux-Safe"
-]
+categories = ["Linux-Server", "Linux-Safe"]
 +++
 
 ### 1、firewalld的基本使用

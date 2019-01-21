@@ -2,11 +2,7 @@
 title = "另外一个强大的shell----fish"
 date = "2018-09-12"
 tags = ["shell", "ohmyfish"]
-categories = [
-​	"Linux-Server",
-​    "Linux-base"
-]
-
+categories = ["Linux-Server", "Linux-base"]
 +++
 
 　　之前介绍过一个非常强大好用的shell---[ohmyzsh](https://jtree.cc/post/oh-my-zsh%E4%BD%93%E9%AA%8C%E5%B0%8F%E8%AE%B0/),而且本人也一直在使用，最近老是在论坛的回复中看到fish的存在，我那颗不安分的心又开始躁动了。。。

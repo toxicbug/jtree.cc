@@ -2,12 +2,7 @@
 title = "Linux用户管理命令详解"
 date = "2018-01-22"
 tags = [ "user", "命令详解" ]
-categories = [
-	"Linux-software",
-	"Linux-Base",
-   "Linux-server"
-]
-
+categories = ["Linux-software", "Linux-Base", "Linux-server"]
 +++
 
 #### 一、新建用户/组群 

@@ -1,11 +1,9 @@
----
-title: 用chfs搭建简单的文件分享服务
-categories: [操作系统,Linux]
-date: 2017-12-19
-tags: 
-  - Linux
-  - 命令详解
----
++++
+title = "用chfs搭建简单的文件分享服务"
+date = "2017-12-19"
+tags = [ "chfs", "webdav", "file" ]
+categories = ["Linux-Base", "Linux-Software"]
++++
 
 #### 一、简介
 

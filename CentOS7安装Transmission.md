@@ -2,10 +2,7 @@
 title = "CentOS7安装Transmission"
 date = "2018-02-20"
 tags = [ "Transmission", "下载" ]
-categories = [
-	"Linux-Server",
-    "Linux-Software"
-]
+categories = ["Linux-Server", "Linux-Software"]
 +++
 
 　　虽然当前很多人购买的Linux VPS主机，但是大部分都局限在一般的上网或者是架设简单的网站用途。不过，Linux VPS主机的实际使用功能往往不止这些，我们可以用来特定项目环境的搭建，有的是用来搭建远程客户端刷单，也有的用来外汇项目，更有用来安装Transmission用于下载用途的。

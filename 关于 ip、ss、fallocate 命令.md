@@ -2,11 +2,7 @@
 title = "关于 ip、ss、fallocate 命令"
 date = "2018-01-22"
 tags = [ "IP", "ss", "fallocate" ]
-categories = [
-	"Linux-base",
-	"Linux-software",
-   "Linux-server"
-]
+categories = ["Linux-base", "Linux-software", "Linux-server"]
 +++
 
 　　ip命令和ss命令是iproute2网络管理工具包里面的两个非常重要和好用的命令，同时也是ifconfig命令的接替者;

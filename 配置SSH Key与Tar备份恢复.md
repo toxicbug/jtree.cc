@@ -2,11 +2,7 @@
 title = "配置SSH Key与Tar备份恢复"
 date = "2017-03-09"
 tags = [ "ssh key", "tar", "ssh" ]
-categories = [
-	"Linux-base",
-	"Linux-software",
-   "Linux-server"
-]
+categories = ["Linux-base", "Linux-software", "Linux-server"]
 +++
 
 ​	每次使用root加密码登录VPS都会担心密码泄露的危险，而且也懒得输入（本人的密码一般都有18位，而且是大小写加字符），那么最好的办法当然是SSH KEY了，虽然很简单，但是我老记不住这些顺序和命令，所以记录下来，以后使用时copy即可。VPS使用时间长了，里面的内容有些需要备份，以防不测。所以这里也一并记录，以后好copy ^v^ .

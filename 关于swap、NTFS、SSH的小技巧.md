@@ -2,11 +2,7 @@
 title = "关于swap、NTFS、SSH的小技巧"
 date = "2018-01-19"
 tags = [ "swap", "NTFS", "ssh" ]
-categories = [
-	"Linux-base",
-	"Linux-software",
-   "Linux-server"
-]
+categories = ["Linux-base", "Linux-software", "Linux-server"]
 +++
 
 ### 一、 为小内存VPS增加swap

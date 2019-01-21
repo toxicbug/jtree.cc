@@ -2,11 +2,7 @@
 title = "查看分区格式和硬件查询命令"
 date = "2019-01-16"
 tags = ["df", "fdisk", "parted", "lsblk"]
-categories = [
-​	"Linux-Server",
-   "Linux-base"
-]
-
+categories = ["Linux-Server", "Linux-base"]
 +++
 
 #### 一、查询磁盘分区系统格式

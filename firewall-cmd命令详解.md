@@ -2,10 +2,7 @@
 title = "firewall-cmd命令详解"
 date = "2018-01-26"
 tags = [ "firewalld", "安全" ]
-categories = [
-	"Linux-Server",
-    "Linux-Safe"
-]
+categories = ["Linux-Server", "Linux-Safe"]
 +++
 
 Linux上新用的防火墙软件，跟iptables差不多的工具。

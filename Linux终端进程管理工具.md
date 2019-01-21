@@ -2,11 +2,7 @@
 title = "Linux终端进程管理工具"
 date = "2017-01-15"
 tags = [ "htop", "xkill", "pgrep"  ]
-categories = [
-	"Linux-base",
-	"Linux-software",
-   "Linux-server"
-]
+categories = ["Linux-base", "Linux-software", "Linux-server"]
 +++
 
 ​	Linux终端有一系列有用的命令。它们可以显示正在运行的进程、杀死进程和改变进程的优先级。本文列举了一些经典传统的命令和一些有用新颖的命令。本文提到的命令会实现某个单一功能。其它命令，例如htop，会在命令的上层提供一个友好的界面供用户使用。

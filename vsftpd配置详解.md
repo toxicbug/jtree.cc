@@ -2,11 +2,7 @@
 title = "vsftpd配置项精解"
 date = "2017-01-16"
 tags = [ "vsftp", "base", "ssh"  ]
-categories = [
-	"Linux-base",
-	"Linux-software",
-   "Linux-server"
-]
+categories = ["Linux-base", "Linux-software", "Linux-server"]
 +++
 
 ​	很多情况下，我们希望限制ftp用户只能在其主目录下（root dir）下活动，不允许他们跳出主目录之外浏览服务器上的其他目录，这时候我就需要使用chroot_local_user,chroot_list_enable,chroot_list_file这三个选项了。以下是对三个配置项的解释：

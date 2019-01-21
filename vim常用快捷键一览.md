@@ -2,10 +2,7 @@
 title = "vim常用快捷键一览"
 date = "2018-02-08"
 tags = [ "vim", "快捷键", "base" ]
-categories = [
-    "Linux-Base",
-    "Linux-Software"
-]
+categories = ["Linux-Base", "Linux-Software"]
 +++
 
 vim 是对vi的扩展，文中的很多操作是vi通用的.

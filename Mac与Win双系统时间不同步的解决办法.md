@@ -2,9 +2,7 @@
 title = "Mac与Win双系统时间不同步的解决办法"
 date = "2016-12-07"
 tags = ["Mac", "Base" ]
-categories = [
-	"Mac"
-]
+categories = ["Mac"]
 +++
 
 　　很多刚使用mac的用户一般都会选择安装双系统来解决对mac系统陌生的问题，不过有些用户发现在安装了windows系统和OS X系统后系统的时间有时候会出现不一致的情况，有时候windows的时间会比OS X系统的时间要慢非常多。

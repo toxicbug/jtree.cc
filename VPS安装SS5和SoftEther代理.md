@@ -2,11 +2,7 @@
 title = "VPS安装SS5和SoftEther代理"
 date = "2017-08-16"
 tags = [ "vps", "ss5", "softether"  ]
-categories = [
-	"Linux-base",
-	"Linux-software",
-   "Linux-server"
-]
+categories = ["Linux-base", "Linux-software", "Linux-server"]
 +++
 
 ### 一、安装配置SockS Server 5服务端

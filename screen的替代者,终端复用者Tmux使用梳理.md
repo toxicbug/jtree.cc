@@ -2,10 +2,7 @@
 title = "screen的替代者,终端复用者Tmux使用梳理"
 date = "2018-04-21"
 tags = [ "终端", "tmux" ]
-categories = [
-	"Linux-software",
-	"Linux-Base"
-]
+categories = ["Linux-software", "Linux-Base"]
 +++
 
 　　Tmux是一个优秀的终端复用软件，类似GNU Screen，但来自于OpenBSD，采用BSD授权。使用它最直观的好处就是，通过一个终端登录远程主机并运行tmux后，在其中可以开启多个控制台而无需再“浪费”多余的终端来连接这台远程主机；是BSD实现的Screen替代品，相对于Screen，它更加先进：支持屏幕切分，而且具备丰富的命令行参数，使其可以灵活、动态的进行各种布局和操作。下面就Tmux的使用做一梳理：

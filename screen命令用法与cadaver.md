@@ -2,11 +2,7 @@
 title = "screen命令用法与cadaver"
 date = "2017-12-19"
 tags = [ "screen", "cadaver", "ssh" ]
-categories = [
-	"Linux-base",
-	"Linux-software",
-   "Linux-server"
-]
+categories = ["Linux-base", "Linux-software", "Linux-server"]
 +++
 
 ## screen命令用法

@@ -2,10 +2,7 @@
 title = "系统进程命令pstree"
 date = "2018-03-03"
 tags = [ "pstree", "tools", "base" ]
-categories = [
-    "Linux-Base",
-    "Linux-Software"
-]
+categories = ["Linux-Base", "Linux-Software"]
 +++
 
 　　先说一下什么是pstree, pstree以树结构显示进程(--display a tree of processes)

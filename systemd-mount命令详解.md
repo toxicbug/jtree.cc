@@ -2,11 +2,7 @@
 title = "systemd-mount命令详解"
 date = "2019-01-17"
 tags = ["systemd-mount", "mount", "automount", "autofs"]
-categories = [
-​	"Linux-Server",
-   "Linux-base"
-]
-
+categories = ["Linux-Server", "Linux-base"]
 +++
 
 `systemd-mount` 用于创建并启动一个临时` .mount `或` .automount` 单元，也就是将` WHAT `文件系统挂载到 `WHERE` 目录。
