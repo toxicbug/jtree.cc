@@ -56,16 +56,69 @@ chfs使用方便，单文件，无太多参数，但是缺点也不少：无权�
 #     1，如果不存在键或对应值为空，则不影响对应的配置
 #     2，配置项的值，语法如同其对应的命令行参数
 #---------------------------------------
+
+
 # 监听端口
 port=
+
+
 # 共享根目录
 # 注意：带空格的目录须用引号包住，如 path="c:\a uply name\folder"
 path=
+
+
 # IP地址过滤
 allow=
-# 账户控制规则
+
+
+#----------------- 账户控制规则 -------------------
+# 注意：该键值可以同时存在多个，你可以将每个用户的访问规则写成一个rule，这样比较清晰，如：
+#     rule=::
+#     rule=root:123456:RW
+#     rule=readonlyuser:123456:R
 rule=
+
+
+# 用户操作日志存放目录，默认为空
+# 如果赋值为空，表示禁用日志
+log=
+
+
+# 网页标题
+html.title=
+
+
+# 网页顶部的公告板。可以是文字，也可以是HTML标签，此时，需要适用一对``(反单引号，通过键盘左上角的ESC键下面的那个键输出)来包住所有HTML标签。几个例子：
+#     1,html.notice=内部资料，请勿传播
+#     2,html.notice=`<img src="https://mat1.gtimg.com/pingjs/ext2020/qqindex2018/dist/img/qq_logo_2x.png" width="100%"/>`
+#     3,html.notice=`<div style="background:black;color:white"><p>目录说明：</p><ul>一期工程：一期工程资料目录</ul><ul>二期工程：二期工程资料目录</ul></div>`
+html.notice=
+
+
+# 是否启用图片预览(网页中显示图片文件的缩略图)，true表示开启，false为关闭。默认开启
+image.preview=
+
+
+#-------------- 设置生效后启用HTTPS -------------
+# 指定certificate文件
+ssl.cert=
+# 指定private key文件
+ssl.key=
 ```
+
+参数说明：
+
+参数说明：
+
+| **help:**    | 显示帮助信息                                                 |
+| ------------ | ------------------------------------------------------------ |
+| **path:**    | 你要共享的根目录，默认为程序运行目录。比如：共享"d:\http_shared_root"目录，运行参数："chfs --path="d:\http_shared_root""。**注意：如果路径带有空格，则需要将整个路径用引号包住！** |
+| **port:**    | 程序使用的端口号，默认为80                                   |
+| **allow:**   | IP地址过滤，可使用白名单模式或黑名单模式                     |
+| **rule:**    | 账户及访问权限，允许一个账户多点登陆，默认情况下匿名用户具有读写权限，其语法为：  **RULEITEM1[\|RULEITEM2\|RULEITEM3...]**  每个RULEITEM代表一个账户信息及其访问权限，多个RULEITEM则用'\|'进行分割，RULEITEM的语法为：  **USER:PWD:MASK[:DIR:MASK...]**  每个项由“:”来分隔，前三个项是必须的，分别对应：账户名、账户密码、共享目录根目录的访问权限。后面的可选的项，必须成对出现，用来设定根目录下面的子级目录的访问权限。一些规定：  * 对于匿名用户，前两个项都为空 * 访问权限分为四种：""(不可访问)，"R"(只读)，"W"(读写)，"D"(写+删除)。读权限指的是下载，写权限指上传、新建等操作，删除权限是在写权限的基础上加上删除权限。 * 各项的值应避免出现空白键，':'及'\|'（目录名除外） |
+| **log:**     | 用户操作日志存放目录，默认是程序所在目录下的logs中。禁用日志功能只需将其赋值为空即可。 |
+| **file:**    | 配置文件，该文件可配置上述配置项，语法相同，如果配置有效则覆盖对应配置项。另外，一些功能需要通过配置文件进行配置，比如页面自定义和SSL证书设置。[下载配置文件模板](http://iscute.cn/asset/chfs.ini) |
+| **version:** | 显示程序版本号                                               |
 
 示例：
 
@@ -98,4 +151,23 @@ chfs --rule="::|admin:admin123:rw|zhangsan:zhangsan123::zhangsanfiles:rw"
 //通过配置文件进行配置，该文件可以不存在，待以后需要更改配置时使用
 chfs --file="d:\chfs\chfs.ini"
 ```
+
+这里给出systemd启动文件配置：
+
+~~~shell
+$ sudo systemctl cat chfs
+# /etc/systemd/system/chfs.service
+[Unit]
+Description=chfs
+After=network.target
+
+[Service]
+Type=simple
+ExecStart=/usr/local/bin/chfs --file=/etc/chfs/chfs.ini
+ExecReload=/bin/kill -HUP $MAINPID
+KillMode=process
+
+[Install]
+WantedBy=multi-user.target
+~~~
 

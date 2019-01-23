@@ -58,7 +58,7 @@ rm ~/.zcompdump*
 
 #### 常用插件
 
-##### git sudo z extract d
+##### git sudo z extract d tmux
 
 > 注意：要完美的使用x解压全，最好安装p7zip和unzip.
 

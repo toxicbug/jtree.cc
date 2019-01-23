@@ -42,11 +42,8 @@ $ hugo server
 +++
 title = "用hugo与caddy搭配来组建我的博客"
 date = "2018-03-29"
-tags = [ "caddy", "hugo", "博客" ]
-categories = [
-	"Linux-Server",
-    "Web Server"
-]
+tags = ["caddy", "hugo", "博客"]
+categories = ["Linux-Server", "Web Server"]
 +++
 ```
 
