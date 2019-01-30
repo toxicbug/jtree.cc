@@ -62,11 +62,11 @@ categories = ["Linux-Raspberry Pi", "Linux-Base", "Linux-server"]
 # vi root/etc/pacman.d/mirrorlist
 以下为源内容：
 #清华 
-Server = http://mirrors.tuna.tsinghua.edu.cn/archlinuxarm/arch/repo 
+Server = http://mirrors.tuna.tsinghua.edu.cn/archlinuxarm/$arch/$repo 
 # 中科大 
-Server = http://mirrors.ustc.edu.cn/archlinuxarm/arch/repo 
+Server = http://mirrors.ustc.edu.cn/archlinuxarm/$arch/$repo 
 #成都电子科大 
-Server = http://mirrors.stuhome.net/archlinuxarm/arch/repo
+Server = http://mirrors.stuhome.net/archlinuxarm/$arch/$repo
 ```
 
 卸载SD卡，然后我们就可以将SD卡插入树莓派运行了。
